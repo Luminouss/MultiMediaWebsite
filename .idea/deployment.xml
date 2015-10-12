@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
   <component name="PublishConfigData" serverName="Webspace">
+=======
+  <component name="PublishConfigData" serverName="Webspace" uploadOnCheckin="cc3014b2-3d41-4a50-a5b4-d20d771e7933">
+>>>>>>> Stashed changes
     <serverData>
       <paths name="Webspace">
         <serverdata>
@@ -10,5 +14,9 @@
         </serverdata>
       </paths>
     </serverData>
+<<<<<<< Updated upstream
+=======
+    <option name="myUploadOnCheckinName" value="Webspace" />
+>>>>>>> Stashed changes
   </component>
 </project>

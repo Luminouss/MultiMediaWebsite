@@ -1,7 +1,8 @@
 /*TODO:Style fuer Standart Login Feld erstellen */
 
 .loginbuttons {
-
+    width:10%;
+    height:4%;
 }
 .logintext{
 

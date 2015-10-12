@@ -6,10 +6,12 @@
  * Time: 15:39
  */
 
-if(36>3)
+$var1 = 53;
+$varmmhmmhmhmshjifhnsdh = 15;
+
+if($var1 > $varmmhmmhmhmshjifhnsdh)
 {
     echo "hi";
-
 }
 
 

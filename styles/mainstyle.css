@@ -1,8 +1,44 @@
 /*TODO:Style fuer Standart Login Feld erstellen */
 
-.loginbuttons {
+body {
+    background-color: #2ab8ac;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
 
+.loginbuttons {
+    background-color: transparent;
+    border: 1px solid;
+    color: white;
+    font-size: 14px;
+
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    padding: 1.3em;
+    /*padding-bottom: 2.5em;*/
+    position: relative;
+}
+
+.loginbuttons:hover {
+    background-color: white;
+    border-color: white;
+    color: #2ab8ac;
+}
+.loginbuttons:after {
+    bottom: .5em;
+    content: attr(href);
+    font-size: 70%;
+    left: 50%;
+    position: absolute;
+    text-transform: none;
+    transform: translateX(-50%);
 }
 .logintext{
-
+    color: beige;
 }

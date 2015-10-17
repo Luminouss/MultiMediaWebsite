@@ -5,8 +5,7 @@
  * Date: 16.10.2015
  * Time: 15:04
  */
-
-class PDO
+class PDOConn
 {
     private $_connection;
 
@@ -33,12 +32,42 @@ class PDO
         try
         {
             /** Erstellt die Datenbankverbindung als eine Variable */
-            $this->_connection = new PDO('mysql:host=' . $this->_dbhost . ';dbname=' . $this->_dbname,$this->_dbuser,$this->_dbppass);
+            $this->_connection = new PDO('mysql:host=' . $this->_dbhost . ';dbname=' . $this->_dbname, $this->_dbuser, $this->_dbpass);
         }
         catch (PDOException $e)
         {
             /** Gibt Fehler aus, falls welche auftreten */
             printf($e->getMessage() . "<br>");
+        };
+    }
+
+    public function createQuery($type, $sqldata)
+    {
+        $sql = "";
+        switch ($type) {
+            case "select":
+                $sql = "SELECT ";
+                break;
+            default:
+                break;
         }
+
+        $select = "";
+        foreach ($sqldata as $value) {
+
+        }
+        $sql .=
+
+    }
+
+    public function GetQuery($sqldata)
+    {
+        $sqlstring = "SELECT " . $sqldata[]
+    }
+
+
+    public function getConn()
+    {
+        return $this->connection;
     }
 }

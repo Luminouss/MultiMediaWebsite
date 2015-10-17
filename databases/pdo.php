@@ -54,6 +54,7 @@ class PDOConn
 
         $select = "";
         foreach ($sqldata as $value) {
+            lol
 
         }
         $sql .=

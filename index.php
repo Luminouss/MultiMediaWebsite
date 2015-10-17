@@ -9,8 +9,7 @@
 if (isset($_POST["action_login"]))
 {
     include_once("User.php");
-
-    $user = new User($_POST["username"], $_POST["password"]);
+    $user = new User(new PDOConn(), $_POST["username"], $_POST["password"]);
 }
 
 ?>
@@ -37,7 +36,7 @@ if (isset($_POST["action_login"]))
     <input type="text" name="username">
     <br>
     Passwort:<br>
-    <input type="text" name="password"><br>
+    <input type="password" name="password"><br>
 
     <input type="submit" class="loginbuttons" name="action_login" value="Login">
     <input type="submit" class="loginbuttons" name="action_reg" value="Registrieren">

@@ -11,9 +11,9 @@ class PDOConn
 
     /** Variabeln fuer die Datenbank verbindung */
     private $_dbhost = "localhost"; //hostname
-    private $_dbname = "web"; // datenbankname
+    private $_dbname = "ni668344_1sql1"; // datenbankname
     private $_dbuser = "root"; //username
-    private $_dbpass = ""; //password
+    private $_dbpass = "123"; //password
 
     /**
      * Konstruktor. wird beim laden der datei automatisch gecallt
@@ -41,31 +41,22 @@ class PDOConn
         };
     }
 
-    public function createQuery($type, $sqldata)
+    public function createGetQuery($x, $y, $z, $order)
     {
-        $sql = "";
-        switch ($type) {
-            case "select":
-                $sql = "SELECT ";
-                break;
-            default:
-                break;
+        $z2 = "";
+        for ($i = 0; i < count($z); $i++) {
+            if (i > 0)
+                $z2 .= " AND ";
+            $z2 .= $z[i][0] . $z[i][1] . $z[i][2];
         }
 
-        $select = "";
-        foreach ($sqldata as $value) {
-            lol
+        $params = array(":x" => $x, ":y" => $y, ":z" => $z2);
+        $sql = "SELECT :x FROM :y WHERE :z";
+        if (isset($order))
+            $sql .= " ORDER BY " . order;
 
-        }
-        $sql .=
-
+        $sth = $this->_connection->prepare($sql, )
     }
-
-    public function GetQuery($sqldata)
-    {
-        $sqlstring = "SELECT " . $sqldata[]
-    }
-
 
     public function getConn()
     {

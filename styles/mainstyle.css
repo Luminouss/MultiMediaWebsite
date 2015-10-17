@@ -8,6 +8,23 @@ body {
     text-align: center;
 }
 
+h1 small {
+    font-size: 25%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+}
+h1.main-title::after {
+    content: attr(title);
+    position: absolute;
+    font-size: 0.25em;
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .loginbuttons {
     background-color: transparent;
     border: 1px solid;

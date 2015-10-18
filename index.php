@@ -20,15 +20,14 @@ if (isset($_POST["action_login"]))
     <meta charset="UTF-8">
     <title>Index</title>
     <link href="styles/mainstyle.css" rel="stylesheet" type="text/css">
+    <link  href="http://csshake.surge.sh/csshake.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--TODO:Index erstellen-->
 <!-- TODO:Basic Login Buttons erstellen-->
 
 
-<h1 class="main-title" title="v0.3">
-    A & D Projekt
-</h1>
+<div class="shake-opacity"><h1 class="main-title" title="v0.3">A & D Projekt</h1></div>
 <br><br><br>
 
 <form action="" method="post">

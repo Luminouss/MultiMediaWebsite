@@ -39,7 +39,11 @@ if (isset($_POST["action_login"]))
 
     <input type="submit" class="loginbuttons" name="action_login" value="Login">
     <input type="submit" class="loginbuttons" name="action_reg" value="Registrieren">
-
 </form>
+<div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+</div>
 </body>
 </html>
